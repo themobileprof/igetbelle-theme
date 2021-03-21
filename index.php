@@ -1,91 +1,5 @@
 <?php get_header(); ?>
-		<!-- Home -->
-
-		<div class="home">
-			<!-- <div class="background_image" style="background-image:url(images/about.jpg)"></div> -->
-			<!-- <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/articles.jpg" data-speed="0.8"></div> -->
-
-			<!-- Header -->
-
-			<header class="header" id="header">
-				<div>
-					<div class="header_top">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="header_top_content d-flex flex-row align-items-center justify-content-start">
-										<div class="logo">
-											<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/banner_small.png" style="width: 120px;" alt="" /></a>
-										</div>
-										<div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
-											<div class="header_top_nav">
-												<ul class="d-flex flex-row align-items-center justify-content-start">
-													<li><a href="#">Frequently Asked Questions</a></li>
-													<li><a href="#">Daily Tracker</a></li>
-													<li><a href="#">Get a Doctor</a></li>
-												</ul>
-											</div>
-											<div class="header_top_phone">
-												<i class="fa fa-android" aria-hidden="true"></i>
-												<span>Chat with Us</span>
-											</div>
-										</div>
-										<div class="hamburger ml-auto">
-											<i class="fa fa-bars" aria-hidden="true"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="header_nav" id="header_nav_pin">
-						<div class="header_nav_inner">
-							<div class="header_nav_container">
-								<div class="container">
-									<div class="row">
-										<div class="col">
-											<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
-												<nav class="main_nav">
-													<ul class="d-flex flex-row align-items-center justify-content-start">
-														<li><a href="index.php">Home</a></li>
-														<li class="active">
-															<a href="about.html">About Us</a>
-														</li>
-														<li><a href="services.html">Services</a></li>
-														<li><a href="articles.php">Articles</a></li>
-													</ul>
-												</nav>
-												<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-													<form action="#" id="search_container_form" class="search_container_form">
-														<input type="text" class="search_container_input" placeholder="Search" required="required" />
-														<button class="search_container_button">
-															<i class="fa fa-search" aria-hidden="true"></i>
-														</button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<div class="home_container">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="home_content">
-								<div class="home_title">iGetBelle Store</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
+<?php require_once('components/navbar.inc.php'); ?>
 		<div class="about">
 			<div class="container">
 				<div class="row">
@@ -97,26 +11,64 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		
-		<div class="about">
-			<div class="container">
+			
+			
 				<div class="row about_row row-eq-height">
 					<div class="col">
 						<div class="about_text">
-							<?php if ( have_posts() ) : while ( have_posts() ) :   the_post(); ?>
-							<h2>
-							<a href="<?php the_permalink() ?>">
-								<?php the_title(); ?>
-							</a>
-							</h2>
-							<?php the_content(); ?>
-							<?php endwhile; else: ?>
-								<p>There no posts to show</p>
-							<?php endif; ?>
+						<?php
+						if ( have_posts() ) {
+							$counter = 1;
+							while ( have_posts() ) {
+								the_post();
+								?>
+
+									<!--Grid column-->
+									<div class="col-lg-4 col-md-12 mb-4">
+										<!--Featured image-->
+										<div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
+											<?php the_post_thumbnail( 'medium-large', array( 'class'=> 'img-fluid')); ?>
+											<a href="<?php echo get_permalink() ?>">
+												<div class="mask"></div>
+											</a>
+										</div>
+
+										<!--Excerpt-->
+										<a href="" class="pink-text">
+											<h6 class="mb-3 mt-4">
+												<i class="fa fa-bolt"></i>
+												<strong> <?php the_category(', '); ?></strong>
+											</h6>
+										</a>
+										<h4 class="mb-3 font-weight-bold dark-grey-text">
+											<strong><?php the_title(); ?></strong>
+										</h4>
+										<p>by
+											<a href="<?php echo get_permalink() ?>" class="font-weight-bold dark-grey-text"><?php echo get_the_author(); ?></a>, <?php echo get_the_date(); ?></p>
+										<p class="grey-text"><?php the_excerpt(); ?></p>
+										<a href="<?php echo get_permalink() ?>" class="btn btn-info btn-rounded btn-md">Read more</a>
+									</div>
+									<!--Grid column-->
+
+								<?php
+								if ($counter % 3 == 0) {
+								?>
+									</div>
+									<!--Grid row-->
+									<!--Grid dynamic row-->
+									<div class="row wow fadeIn">
+								<?php
+								}
+								$counter++;
+							} // end while
+						} // end if
+						?>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<?php mdb_pagination(); ?>
 					</div>
 				</div>
 			</div>

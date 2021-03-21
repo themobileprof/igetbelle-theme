@@ -1,5 +1,10 @@
 <?php
 /**
+ * Include external files
+ */
+require_once('inc/pagination.inc.php');
+
+/**
  * Include CSS files
  */
 function theme_enqueue_scripts() {
@@ -26,4 +31,14 @@ function theme_enqueue_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
+
+/**
+ * Setup Theme
+ */
+function theme_setup() {
+    // Add featured image support
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'theme_setup');
+
 ?>
