@@ -1,6 +1,6 @@
 <?php
 //Custom pagination
-function igb_pagination() {
+function mdb_pagination() {
 if( is_singular() )
 return;
 global $wp_query;
