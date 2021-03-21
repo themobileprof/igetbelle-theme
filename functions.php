@@ -32,13 +32,4 @@ function theme_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
-/**
- * Setup Theme
- */
-function theme_setup() {
-    // Add featured image support
-    add_theme_support('post-thumbnails');
-}
-add_action('after_setup_theme', 'theme_setup');
-
 ?>
