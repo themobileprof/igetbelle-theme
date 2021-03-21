@@ -3,14 +3,15 @@
  * Include CSS files
  */
 function theme_enqueue_scripts() {
-        wp_enqueue_style( 'Font_Awesome', get_template_directory_uri() . '/plugins/font-awesome-4.7.0/css/font-awesome.min.css' );
-        wp_enqueue_style( 'Bootstrap_css', get_template_directory_uri() . '/styles/bootstrap4/bootstrap.min.css' );
-        wp_enqueue_style( 'Owl_carousel', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/owl.carousel.css' );
-        wp_enqueue_style( 'Owl_theme', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' );
+	wp_enqueue_style( 'Font_Awesome', get_template_directory_uri() . '/plugins/font-awesome-4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'Bootstrap_css', get_template_directory_uri() . '/styles/bootstrap4/bootstrap.min.css' );
+	wp_enqueue_style( 'Owl_carousel', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/owl.carousel.css' );
+	wp_enqueue_style( 'Owl_theme', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' );
 	wp_enqueue_style( 'Animate', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/animate.css' );
 	wp_enqueue_style( 'About', get_template_directory_uri() . '/styles/about.css' );
 	wp_enqueue_style( 'About_responsive', get_template_directory_uri() . '/styles/about_responsive.css' );
-        wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '3.3.1', true );
+	
+    wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '3.3.1', true );
 	wp_enqueue_script( 'Popper', get_template_directory_uri() . '/styles/bootstrap4/popper.js', array(), false, true );
 	wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/styles/bootstrap4/bootstrap.min.js', array(), false, true );
 	wp_enqueue_script( 'Tween_Max', get_template_directory_uri() . '/plugins/greensock/TweenMax.min.js', array(), false, true );
@@ -23,6 +24,6 @@ function theme_enqueue_scripts() {
 	wp_enqueue_script( 'Parallax', get_template_directory_uri() . '/plugins/parallax-js-master/parallax.min.js', array(), false, true );
 	wp_enqueue_script( 'About', get_template_directory_uri() . '/js/about.js', array(), false, true );
 
-        }
+}
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 ?>
