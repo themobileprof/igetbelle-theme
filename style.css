@@ -7,3 +7,17 @@
  Version:  	1.0.0
  Tags:     	igetbelle, pregnancy
 */
+.table-products img {
+  max-width: 200px;
+  max-height: 200px; }
+
+.table-products tr th, .table-products tr td {
+  vertical-align: middle; }
+
+ins {
+      text-decoration: none;
+}
+
+.w-100px{
+  width: 100px;
+}
