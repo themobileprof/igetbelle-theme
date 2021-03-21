@@ -90,7 +90,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<?php woocommerce_content(); ?>
+						<div class="section_title text-success">
+							<?php woocommerce_content(); ?>
+						</div>
 					</div>
 				</div>
 			</div>
