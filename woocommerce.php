@@ -78,7 +78,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="home_content">
-								<div class="home_title">iGetBelle Store</div>
+								<div class="home_title">iGetBelle Pregnancy Store</div>
 							</div>
 						</div>
 					</div>
@@ -88,13 +88,14 @@
 
 		<div class="about">
 			<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<div class="section_title text-success">
+				<div class="row about_row row-eq-height">
+					<div class="col">
+						<div class="about_text">
 							<?php woocommerce_content(); ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<?php get_footer(); ?>
