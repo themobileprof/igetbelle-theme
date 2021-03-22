@@ -37,7 +37,7 @@
 
 		<!-- Home -->
 
-		<div class="home">
+		<div class="home" style="height: 300px;">
 			<!-- <div class="background_image" style="background-image:url(images/about.jpg)"></div> -->
 			<!-- <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/articles.jpg" data-speed="0.8"></div> -->
 
