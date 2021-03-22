@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php require_once('components/navbar.inc.php'); ?>
-		<div>
+		<div class="about" style="padding-top: 0;">
 			<div class="container">
 				<div class="row row-eq-height">
 					<div class="col">
