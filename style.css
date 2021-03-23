@@ -53,9 +53,8 @@ ins {
 	margin: 0px;
 	background: #ddd;
 }
-a.button,
-button.button,
-input.button,
-#review_form #submit {
-	background: black;
+.button {
+	width: 115px;
+	height: 34px;
+	background: #833c83;
 }
