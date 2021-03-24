@@ -58,3 +58,6 @@ ins {
 	height: 34px;
 	background: #833c83;
 }
+.white-text > a {
+	color: white;
+}
