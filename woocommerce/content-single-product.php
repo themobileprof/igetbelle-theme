@@ -58,7 +58,6 @@ if ( post_password_required() ) {
 
 </header>
 
-<main>
 
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
@@ -155,4 +154,3 @@ if ( post_password_required() ) {
 
 	<?php do_action( 'woocommerce_after_single_product' ); ?>
 
-</main>
