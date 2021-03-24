@@ -31,32 +31,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<header>
-    <!-- Intro -->
-    <div class="card card-intro blue-gradient mb-4">
-
-        <div class="card-body white-text rgba-black-light text-center pt-5 pb-4">
-
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-
-                <!--Grid column-->
-                <div class="col-md-6">
-
-                  <?php the_title( '<h1 class="product_title entry-title font-weight-bold mb-4">', '</h1>' ); ?>
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
-        </div>
-
-    </div>
-    <!-- Intro -->
-
-</header>
 
 
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
