@@ -54,17 +54,11 @@
 											<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/banner_small.png" style="width: 120px;" alt="" /></a>
 										</div>
 										<div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
-											<div class="header_top_nav">
-												<ul class="d-flex flex-row align-items-center justify-content-start">
-													<li><a href="#">Frequently Asked Questions</a></li>
-													<li><a href="#">Daily Tracker</a></li>
-													<li><a href="#">Get a Doctor</a></li>
-												</ul>
-											</div>
-											<div class="header_top_phone">
-												<i class="fa fa-android" aria-hidden="true"></i>
-												<span>Chat with Us</span>
-											</div>
+										<?php
+										wp_nav_menu( array( 
+											'theme_location' => 'my-custom-menu', 
+											'container_class' => 'custom-menu-class' ) ); 
+										?>
 										</div>
 										<div class="hamburger ml-auto">
 											<i class="fa fa-bars" aria-hidden="true"></i>
