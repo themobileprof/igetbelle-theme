@@ -57,7 +57,7 @@
 										<?php
 										wp_nav_menu( array( 
 											'theme_location' => 'my-custom-menu', 
-											'container_class' => 'custom-menu-class' ) ); 
+											'container_class' => 'header_top_nav' ) ); 
 										?>
 										</div>
 										<div class="hamburger ml-auto">

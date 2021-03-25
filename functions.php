@@ -57,7 +57,7 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
 function woocommerce_template_product_description() {
   woocommerce_get_template( 'single-product/tabs/description.php' );
 }
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
+//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
 
 
 //remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
