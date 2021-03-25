@@ -61,17 +61,17 @@ ins {
 .white-text > a {
 	color: white;
 }
-div.custom-menu-class ul {
+div.header_top_nav ul {
 	margin: 20px 0px 20px 0px;
 	list-style-type: none;
 	list-style: none;
 	list-style-image: none;
 	text-align: right;
 }
-div.custom-menu-class li {
+div.header_top_nav li {
 	padding: 0px 20px 0px 0px;
 	display: inline;
 }
-div.custom-menu-class a {
+div.header_top_nav a {
 	color: #ffffff;
 }
