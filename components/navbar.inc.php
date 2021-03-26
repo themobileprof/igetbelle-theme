@@ -61,7 +61,6 @@
 											'menu_class' => 'd-flex flex-row align-items-center justify-content-start'
 											 ) ); 
 										?>
-										<?php echo do_shortcode("[woo_cart_but]"); ?>
 										</div>
 										<div class="hamburger ml-auto">
 											<i class="fa fa-bars" aria-hidden="true"></i>
