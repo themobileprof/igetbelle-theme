@@ -1,4 +1,8 @@
 <?php
+/**
+ * Include external files
+ */
+require_once('inc/pagination.inc.php');
 
 function customtheme_add_woocommerce_support(){
 	add_theme_support( 'woocommerce' );
@@ -54,35 +58,21 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
 
 
 
-add_shortcode ('woo_cart_but', 'woo_cart_but' );
 /**
  * Create Shortcode for WooCommerce Cart Menu Item
  */
 function woo_cart_but() {
 	ob_start();
  
-        $cart_count = WC()->cart->cart_contents_count; // Set variable for cart item count
-        $cart_url = wc_get_cart_url();  // Set Cart URL
-  
-        ?>
-        <li><a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket">
-	    <?php
-        if ( $cart_count > 0 ) {
-       ?>
-            <span class="cart-contents-count"><?php echo $cart_count; ?></span>
-        <?php
-        }
-        ?>
-        </a></li>
-        <?php
+        Echo "wow";
 	        
     return ob_get_clean();
  
 }
 
+add_shortcode ('woo_cart_but', 'woo_cart_but' );
 
 
-add_filter( 'woocommerce_add_to_cart_fragments', 'woo_cart_but_count' );
 /**
  * Add AJAX Shortcode when cart contents update
  */
@@ -108,16 +98,16 @@ function woo_cart_but_count( $fragments ) {
      
     return $fragments;
 }
+add_filter( 'woocommerce_add_to_cart_fragments', 'woo_cart_but_count' );
 
 
 
-add_filter( 'wp_nav_menu_top-menu_items', 'woo_cart_but_icon', 10, 2 ); // Change menu to suit - example uses 'top-menu'
 
 /**
  * Add WooCommerce Cart Menu Item Shortcode to particular menu
  */
 function woo_cart_but_icon ( $items, $args ) {
-       $items .=  '[woo_cart_but]'; // Adding the created Icon via the shortcode already created
-       //$items .= do_shortcode(“[woo_cart_but]”);
+       $items .= do_shortcode(“[woo_cart_but]”); // Adding the created Icon via the shortcode already created
        return $items;
 }
+add_filter( 'wp_nav_menu_top-menu_items', 'woo_cart_but_icon', 10, 2 ); // Change menu to suit - example uses 'top-menu'
