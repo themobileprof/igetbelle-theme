@@ -12,9 +12,9 @@
 				</form>
 				<ul>
 					<li class="menu_item"><a href="index.php">home</a></li>
-					<li class="menu_item"><a href="about.html">about us</a></li>
 					<li class="menu_item"><a href="services.html">services</a></li>
 					<li class="menu_item"><a href="articles.php">articles</a></li>
+					<li class="menu_item"><a href="/cart/">Cart</a></li>
 				</ul>
 			</div>
 			<div class="menu_social">
@@ -85,6 +85,7 @@
 														</li>
 														<li><a href="services.html">Services</a></li>
 														<li><a href="articles.php">Articles</a></li>
+														<li><?php echo do_shortcode("[woo_cart_but]"); ?></li>
 													</ul>
 												</nav>
 												<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
