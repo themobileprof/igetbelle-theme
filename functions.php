@@ -66,7 +66,8 @@ function woo_cart_but() {
   
         ?>
         <li><a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket" data-background-icon='&#xf07a;'>
-	    <?php
+	    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		<?php
         if ( $cart_count > 0 ) {
        ?>
             <span class="cart-contents-count"><?php echo $cart_count; ?></span>
@@ -94,7 +95,8 @@ function woo_cart_but_count( $fragments ) {
     $cart_url = wc_get_cart_url();
     
     ?>
-    <a class="cart-contents menu-item" href="<?php echo $cart_url; ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+    <a class="cart-contents menu-item" href="<?php echo $cart_url; ?>" title="<?php _e( 'View your shopping cart' ); ?>" data-background-icon='&#xf07a;'>
+	<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 	<?php
     if ( $cart_count > 0 ) {
         ?>
