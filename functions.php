@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Include external files
+ */
+require_once('inc/pagination.inc.php');
+
+
 function customtheme_add_woocommerce_support(){
 	add_theme_support( 'woocommerce' );
 }
@@ -11,11 +17,18 @@ function wpb_custom_new_menu() {
   }
 add_action( 'init', 'wpb_custom_new_menu' );
 
+function my_custom_theme_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Primary Sidebar', 'my-custom-theme' ),
+        'id'   => 'main-sidebar',
+    ) );
+}
+add_action( 'widgets_init', 'my_custom_theme_sidebar' );
 
-/**
- * Include external files
- */
-require_once('inc/pagination.inc.php');
+
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'my-custom-image-size', 640, 999 );
+
 
 /**
  * Include CSS files
