@@ -11,10 +11,11 @@
 					</button>
 				</form>
 				<ul>
-					<li class="menu_item"><a href="index.php">home</a></li>
-					<li class="menu_item"><a href="services.html">services</a></li>
-					<li class="menu_item"><a href="articles.php">articles</a></li>
-					<li class="menu_item"><a href="/cart/">Cart</a></li>
+					<li class="menu_item"><a href="index.php">shop</a></li>
+					<li class="menu_item"><a href="https://igetbelle.com/services.php">services</a></li>
+					<li class="menu_item"><a href="/posts/">posts</a></li>
+					<li class="menu_item"><a href="/checkout/">checkout</a></li>
+					<li class="menu_item"><?php echo do_shortcode("[woo_cart_but]"); ?></li>
 				</ul>
 			</div>
 			<div class="menu_social">
@@ -79,12 +80,12 @@
 											<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
 												<nav class="main_nav">
 													<ul class="d-flex flex-row align-items-center justify-content-start">
-														<li><a href="index.php">Home</a></li>
+														<li><a href="index.php">Shop</a></li>
 														<li class="active">
-															<a href="about.html">About Us</a>
+															<a href="https://igetbelle.com/">About Us</a>
 														</li>
-														<li><a href="services.html">Services</a></li>
-														<li><a href="articles.php">Articles</a></li>
+														<li><a href="https://igetbelle.com/services.php">Services</a></li>
+														<li><a href="/posts/">Posts</a></li>
 													</ul>
 												</nav>
 												<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
@@ -111,7 +112,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="home_content">
-								<div class="home_title">iGetBelle Product Store</div>
+								<div class="home_title">iGetBelle Pregnancy Store</div>
 							</div>
 						</div>
 					</div>
