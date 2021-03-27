@@ -85,7 +85,6 @@
 														</li>
 														<li><a href="services.html">Services</a></li>
 														<li><a href="articles.php">Articles</a></li>
-														<li><?php echo do_shortcode("[woo_cart_but]"); ?></li>
 													</ul>
 												</nav>
 												<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
@@ -95,6 +94,7 @@
 															<i class="fa fa-search" aria-hidden="true"></i>
 														</button>
 													</form>
+													<?php echo do_shortcode("[woo_cart_but]"); ?>
 												</div>
 											</div>
 										</div>
