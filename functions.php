@@ -28,6 +28,7 @@ function theme_enqueue_scripts() {
 	wp_enqueue_style( 'Animate', get_template_directory_uri() . '/plugins/OwlCarousel2-2.2.1/animate.css' );
 	wp_enqueue_style( 'About', get_template_directory_uri() . '/styles/about.css' );
 	wp_enqueue_style( 'About_responsive', get_template_directory_uri() . '/styles/about_responsive.css' );
+	wp_enqueue_style( 'Custom', get_template_directory_uri() . '/styles/custom.css' );
 	
     wp_enqueue_script( 'jQuery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '3.3.1', true );
 	wp_enqueue_script( 'Popper', get_template_directory_uri() . '/styles/bootstrap4/popper.js', array(), false, true );
