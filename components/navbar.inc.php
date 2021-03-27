@@ -94,10 +94,10 @@
 															<i class="fa fa-search" aria-hidden="true"></i>
 														</button>
 													</form>
-													<?php echo do_shortcode("[woo_cart_but]"); ?>
 												</div>
 											</div>
 										</div>
+										<?php echo do_shortcode("[woo_cart_but]"); ?>
 									</div>
 								</div>
 							</div>
