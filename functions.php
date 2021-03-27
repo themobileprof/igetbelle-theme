@@ -62,11 +62,8 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
  * Create Shortcode for WooCommerce Cart Menu Item
  */
 function woo_cart_but() {
-	ob_start();
- 
-        echo "wow";
-	        
-    return ob_get_clean();
+	
+    return "wow";
  
 }
 
