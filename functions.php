@@ -64,7 +64,7 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
 function woo_cart_but() {
 	ob_start();
  
-        Echo "wow";
+        echo "wow";
 	        
     return ob_get_clean();
  
