@@ -60,8 +60,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="woocommerce-additional-fields__field-wrapper">
 			<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
-				<?php $field['input_class'] = array("col-4"); ?>
-				<?php woocommerce_form_field( $key, $field, "You Say?" ); ?>
+				<?php $field['custom_attributes'] = array('style' => 'width:240px;'); ?>
+				<?php woocommerce_form_field( $key, $field, "$checkout->get_value( $key )" ); ?>
 			<?php endforeach; ?>
 		</div>
 
