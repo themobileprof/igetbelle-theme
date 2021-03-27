@@ -12,7 +12,7 @@
 				</form>
 				<ul>
 					<li class="menu_item"><a href="index.php">shop</a></li>
-					<li class="menu_item"><a href="https://igetbelle.com/services.php">services</a></li>
+					<li class="menu_item"><a href="https://igetbelle.com/services">services</a></li>
 					<li class="menu_item"><a href="/posts/">posts</a></li>
 					<li class="menu_item"><a href="/checkout/">checkout</a></li>
 					<li class="menu_item"><?php echo do_shortcode("[woo_cart_but]"); ?></li>
@@ -84,7 +84,7 @@
 														<li class="active">
 															<a href="https://igetbelle.com/">About Us</a>
 														</li>
-														<li><a href="https://igetbelle.com/services.php">Services</a></li>
+														<li><a href="https://igetbelle.com/services">Services</a></li>
 														<li><a href="/posts/">Posts</a></li>
 													</ul>
 												</nav>
