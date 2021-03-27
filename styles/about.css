@@ -375,26 +375,26 @@ section {
 .header_top_nav ul li a:hover {
 	color: #32c69a;
 }
-.header_top_nav ul li a.cart-contents {
+.cart-contents {
 	position: relative;
 	display: flex !important;
 	flex-flow: column nowrap;
 	justify-content: center;
 }
 
-.header_top_nav ul li a.cart-contents:before {
+.cart-contents:before {
 	font-family: "FontAwesome";
 	font-weight: 900;
 	content: "\f07a" !important;
 	font-size: 30px;
-	color: #2414ff;
+	color: #ffffff;
 }
 
-.header_top_nav ul li a.cart-contents:hover {
+.cart-contents:hover {
 	text-decoration: none;
 }
 
-.header_top_nav ul li a.cart-contents-count {
+.cart-contents-count {
 	position: absolute;
 	top: 15px;
 	right: 1px;
