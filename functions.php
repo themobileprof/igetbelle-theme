@@ -62,8 +62,24 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_me
  * Create Shortcode for WooCommerce Cart Menu Item
  */
 function woo_cart_but() {
-	
-    return "wow";
+	ob_start();
+ 
+        $cart_count = WC()->cart->cart_contents_count; // Set variable for cart item count
+        $cart_url = wc_get_cart_url();  // Set Cart URL
+  
+        ?>
+        <li><a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket">
+	    <?php
+        if ( $cart_count > 0 ) {
+       ?>
+            <span class="cart-contents-count"><?php echo $cart_count; ?></span>
+        <?php
+        }
+        ?>
+        </a></li>
+        <?php
+	        
+    return ob_get_clean();
  
 }
 
@@ -104,7 +120,7 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'woo_cart_but_count' );
  * Add WooCommerce Cart Menu Item Shortcode to particular menu
  */
 function woo_cart_but_icon ( $items, $args ) {
-       $items .= do_shortcode(“[woo_cart_but]”); // Adding the created Icon via the shortcode already created
+       $items .= do_shortcode("[woo_cart_but]"); // Adding the created Icon via the shortcode already created
        return $items;
 }
 add_filter( 'wp_nav_menu_top-menu_items', 'woo_cart_but_icon', 10, 2 ); // Change menu to suit - example uses 'top-menu'
