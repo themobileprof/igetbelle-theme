@@ -385,7 +385,7 @@ section {
 .header_top_nav ul li a.cart-contents:before {
 	font-family: "FontAwesome";
 	font-weight: 900;
-	content: attr(data-background-icon) !important;
+	content: "\f07a" !important;
 	font-size: 30px;
 	color: #2414ff;
 }
