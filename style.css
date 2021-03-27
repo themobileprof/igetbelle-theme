@@ -71,9 +71,9 @@ ins {
 .cart-contents:before {
 	font-family: "FontAwesome";
 	font-weight: 900;
-	content: "\f07a" !important;
+	content: "&#xf07a" !important;
 	font-size: 30px;
-	color: #ff1493;
+	color: #2414ff;
 }
 
 .cart-contents:hover {
