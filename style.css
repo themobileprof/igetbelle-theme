@@ -61,14 +61,14 @@ ins {
 .white-text > a {
 	color: white;
 }
-#menu-top-menu li a.cart-contents {
+.header_top_nav ul li a.cart-contents {
 	position: relative;
 	display: flex !important;
 	flex-flow: column nowrap;
 	justify-content: center;
 }
 
-#menu-top-menu li a.cart-contents:before {
+.header_top_nav ul li a.cart-contents:before {
 	font-family: "FontAwesome";
 	font-weight: 900;
 	content: attr(data-background-icon) !important;
@@ -76,11 +76,11 @@ ins {
 	color: #2414ff;
 }
 
-#menu-top-menu li a.cart-contents:hover {
+.header_top_nav ul li a.cart-contents:hover {
 	text-decoration: none;
 }
 
-#menu-top-menu li a.cart-contents-count {
+.header_top_nav ul li a.cart-contents-count {
 	position: absolute;
 	top: 15px;
 	right: 1px;
