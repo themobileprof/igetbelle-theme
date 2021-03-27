@@ -71,7 +71,7 @@ ins {
 .cart-contents:before {
 	font-family: "FontAwesome";
 	font-weight: 900;
-	content: "&#xf07a" !important;
+	content: attr(data-background-icon) !important;
 	font-size: 30px;
 	color: #2414ff;
 }

@@ -65,7 +65,7 @@ function woo_cart_but() {
         $cart_url = wc_get_cart_url();  // Set Cart URL
   
         ?>
-        <li><a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket">
+        <li><a class="menu-item cart-contents" href="<?php echo $cart_url; ?>" title="My Basket" data-background-icon='&#xf07a;'>
 	    <?php
         if ( $cart_count > 0 ) {
        ?>
