@@ -54,14 +54,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3><?php esc_html_e( 'Additional information', 'woocommerce' ); ?></h3>
+			<h3><?php esc_html_e( 'More information', 'woocommerce' ); ?></h3>
 
 		<?php endif; ?>
 
 		<div class="woocommerce-additional-fields__field-wrapper">
 			<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
 				<?php $field['input_class'] = "col-4"; ?>
-				<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+				<?php woocommerce_form_field( $key, $field, "You Say?" ); ?>
 			<?php endforeach; ?>
 		</div>
 
