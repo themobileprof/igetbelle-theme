@@ -27,7 +27,7 @@
 										</ul>
 									</div>
 									<div class="news_post_text">
-										<?php get_template_part( 'content', get_post_format() ); ?>
+										<?php the_content(); ?>
 										<?php
 										// If comments are open or we have at least one comment, load up the comment template.
 										if ( comments_open() || get_comments_number() ) :
