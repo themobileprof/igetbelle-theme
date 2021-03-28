@@ -44,10 +44,6 @@ ins {
 	margin: 0px;
 	background: #ddd;
 }
-.button {
-	width: auto;
-	overflow: hidden;
-}
 .white-text > a {
 	color: white;
 }
