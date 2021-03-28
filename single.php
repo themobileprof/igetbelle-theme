@@ -31,7 +31,11 @@
 										<?php
 										// If comments are open or we have at least one comment, load up the comment template.
 										if ( comments_open() || get_comments_number() ) :
+											echo "<div class=\"card\">
+													<div class=\"card-body\">";
 											comments_template();
+											echo "	</div>
+												</div>";
 										endif;
 										?>
 									</div>
