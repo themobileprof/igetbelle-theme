@@ -46,6 +46,7 @@ ins {
 }
 .button {
 	width: auto;
+	overflow: hidden;
 }
 .white-text > a {
 	color: white;
