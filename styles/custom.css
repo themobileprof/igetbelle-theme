@@ -94,3 +94,7 @@ ins {
 .woocommerce form .form-row textarea {
 	padding: 5px;
 }
+.news {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}

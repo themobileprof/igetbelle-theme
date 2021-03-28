@@ -57,7 +57,7 @@
 						</div>
 					</div>
 
-					<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+					<?php if ( is_active_sidebar( 'main-sidebar' ) ) { ?>
 					<!-- Sidebar -->
 					<div class="col-lg-4">
 						<div class="news_sidebar">
