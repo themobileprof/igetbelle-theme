@@ -31,7 +31,7 @@
 										<?php
 										// If comments are open or we have at least one comment, load up the comment template.
 										if ( comments_open() || get_comments_number() ) :
-											echo "<div class=\"card\">
+											echo "<div class=\"card border-success p-3\">
 													<div class=\"card-body\">";
 											comments_template();
 											echo "	</div>
@@ -44,7 +44,7 @@
 							</div>
 	
 							<div class="pagination">
-								<?php previous_post_link(); ?> |  <?php next_post_link(); ?>
+								<?php previous_post_link(); ?>  <?php next_post_link(); ?>
 							</div>
 							<?php endwhile; ?>
 							
