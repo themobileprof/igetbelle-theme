@@ -11,7 +11,7 @@
 					</button>
 				</form>
 				<ul>
-					<li class="menu_item"><a href="index.php">shop</a></li>
+					<li class="menu_item"><a href="/">shop</a></li>
 					<li class="menu_item"><a href="https://igetbelle.com/services">services</a></li>
 					<li class="menu_item"><a href="/posts/">posts</a></li>
 					<li class="menu_item"><a href="/checkout/">checkout</a></li>
@@ -52,7 +52,7 @@
 								<div class="col">
 									<div class="header_top_content d-flex flex-row align-items-center justify-content-start">
 										<div class="logo">
-											<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/banner_small.png" style="width: 120px;" alt="" /></a>
+											<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/banner_small.png" style="width: 120px;" alt="" /></a>
 										</div>
 										<div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
 										<?php
@@ -80,7 +80,7 @@
 											<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
 												<nav class="main_nav">
 													<ul class="d-flex flex-row align-items-center justify-content-start">
-														<li><a href="index.php">Shop</a></li>
+														<li><a href="/">Shop</a></li>
 														<li class="active">
 															<a href="https://igetbelle.com/">About Us</a>
 														</li>
