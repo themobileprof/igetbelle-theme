@@ -1,21 +1,23 @@
 <?php get_header(); ?>
 <?php require_once('components/navbar.inc.php'); ?>
-		<div class="news" style="padding-top: 0;">
+		<div class="news">
 			<div class="container">
-				<div class="row row-eq-height">
+				<div class="row">
+
+					<!-- News Posts -->
 					<div class="col-lg-8">
-						<div class="about_text">
+						<div class="news_posts">
+
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 							<!-- News Post -->
 							<div class="news_post">
 								<div class="news_post_image embed-responsive embed-responsive-21by9"><?php the_post_thumbnail('my-custom-image-size'); ?></div>
 								<div class="news_post_content">
-									<div class="news_post_date"><a href="#"><?php the_time('F j, Y'); ?></a></div>
-									<div class="news_post_title"><a href="<?php the_shortlink(); ?>"><?php the_title(); ?></a></div>
+									<div class="news_post_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
 									<div class="news_post_info">
 										<ul class="d-flex flex-row align-items-center justify-content-start">
-											<li>by <?php the_author(); ?></li>
+											<li><small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small></li>
 										</ul>
 									</div>
 									<div class="news_post_text">
