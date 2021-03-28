@@ -16,7 +16,7 @@
 								<div class="news_post_image embed-responsive embed-responsive-21by9">
 									<?php the_post_thumbnail('my-custom-image-size'); ?>
 								</div>
-								<? endif; ?>
+								<?php endif; ?>
 								<div class="news_post_content">
 									<div class="news_post_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></div>
 									<div class="news_post_info">
