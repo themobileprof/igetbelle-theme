@@ -45,9 +45,7 @@ ins {
 	background: #ddd;
 }
 .button {
-	width: 115px;
-	height: 34px;
-	background: #833c83;
+	width: auto;
 }
 .white-text > a {
 	color: white;
